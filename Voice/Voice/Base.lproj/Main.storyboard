@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Voice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHt-eJ-AYq">
+                                <rect key="frame" x="172" y="318" width="70" height="100"/>
+                                <state key="normal" image="voice"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-dI-trN">
+                                <rect key="frame" x="182" y="454" width="50" height="274"/>
+                                <state key="normal" image="Logomakr_4OQUJL"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl9-2T-a5L">
+                                <rect key="frame" x="164" y="426" width="87" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.10530178384357569" green="0.076201732990299267" blue="0.46569638324873097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94894153340764609" green="0.95923747937946557" blue="0.99012531729492392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MHt-eJ-AYq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="14g-gr-Bry"/>
+                            <constraint firstItem="MHt-eJ-AYq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2nS-GC-Hed"/>
+                            <constraint firstItem="Yl9-2T-a5L" firstAttribute="top" secondItem="MHt-eJ-AYq" secondAttribute="bottom" constant="8" symbolic="YES" id="JNn-CH-Uey"/>
+                            <constraint firstItem="Yl9-2T-a5L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N2R-6r-ydo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MOL-dI-trN" secondAttribute="bottom" constant="8" symbolic="YES" id="Twg-b1-KHL"/>
+                            <constraint firstItem="MOL-dI-trN" firstAttribute="top" secondItem="Yl9-2T-a5L" secondAttribute="bottom" constant="8" symbolic="YES" id="asB-8M-7la"/>
+                            <constraint firstItem="MOL-dI-trN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQa-wT-7dr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="-8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logomakr_4OQUJL" width="50" height="50"/>
+        <image name="voice" width="70" height="100"/>
+    </resources>
+</document>
